@@ -1,0 +1,122 @@
+.modalmask {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalmask:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox {
+  width: 400px;
+  position: relative;
+  padding: 5px 20px 13px 20px;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+/*Movimientos*/
+.movedown {
+  margin: 0 auto;
+}
+
+.modalmask:target .movedown {
+  margin: 10% auto;
+}
+
+/*Boton de cerrar*/
+.close {
+  background: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: 1.5rem;
+  text-align: center;
+  top: 1.5rem;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.close:hover {
+  background-color: #198754;
+  color: #222;
+}
+.full-width-image {
+  width: 100%;
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  color: #fff;
+  padding: 10px;
+}
+
+.text-overlay .text {
+  font-size: 60px;
+  margin: 0;
+}
+.contenedor {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-top: 5rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons:hover {
+  scale: 125%;
+  cursor: pointer;
+  transition-duration: 1000ms;
+}
+
+.imagen-background {
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 1.8),
+      rgb(0 0 0 / 0.7)
+    ),
+    url(/multimedia/kratos.webp);
+  padding: 5rem 6rem;
+  background-size: cover;
+  background-position: center;
+}
+.boton-estilo {
+  text-decoration: none;
+  color: #fff;
+}

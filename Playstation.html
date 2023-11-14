@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Playstation</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
-    <title>Playstation</title>
+    <link rel="stylesheet" href="/styles/playstation.css" />
   </head>
   <body>
     <nav
@@ -45,10 +45,7 @@
               <a class="nav-link active" href="Playstation.html">Playstation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nintendo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sega</a>
+              <a class="nav-link active" href="Nintendo.html">Nintendo</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -65,10 +62,232 @@
         </div>
       </div>
     </nav>
+
+    <div>
+      <h1 class="text-uppercase mt-5 mb-5 fw-bolder" style="padding-left: 2rem; color: #0969E6;">
+        Nuestros juegos
+      </h1>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="/multimedia/gow.jpg"
+                class="d-block w-100 h-75"
+                alt="Imagen de Xbox"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/multimedia/crash.jpg"
+                class="d-block w-100 h-75"
+                alt="Imagen COD"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/multimedia/nba2k23.jpg"
+                class="d-block w-100 h-75"
+                alt="Imagen de gta"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/multimedia/spiderman.jpg"
+                class="d-block w-100 h-75"
+                alt="Imagen de fortnite"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/multimedia/bloodborn.jpg"
+                class="d-block w-100 h-75"
+                alt="Imagen de Red dead redemption"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="contenedor">
+      <div id="icons" class="flex-container iconsStyle">
+        <div>
+          <div
+            style="padding: 2rem; background-color: #000; margin: 0 1rem; color:white"
+            class="icons"
+            id="twitch"
+          >
+            <img
+              src="/multimedia/twitch_icon_146123.png"
+              alt="Twitch"
+              width="100px"
+              id="discord"
+            />
+            <p style="text-align: center">Twitch</p>
+          </div>
+        </div>
+        <div>
+          <div
+            style="padding: 2rem; background-color: #000; margin: 0 1rem; color:white"
+            class="icons"
+            
+          >
+            <img
+              src="/multimedia/discord-logo-4-1.png"
+              alt="Discord"
+              width="100px"
+              id="discord"
+            />
+            <p style="text-align: center">Discord</p>
+          </div>
+        </div>
+        <div>
+          <div
+            style="padding: 2rem; background-color: #000; margin: 0 1rem; color:white"
+            class="icons"
+            id="playstation"
+          >
+            <img src="/multimedia/FontistoPlaystation.svg" alt="Playstation" width="100px" height="100px" />
+            <p style="text-align: center">Playstation</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <div
+        class="flex-container"
+        style="margin-bottom: 100px; margin-top: 100px; background-color:#202124; width: 100%; padding: 2rem 10rem; color: white;"
+      >
+        <div >
+          <h2 class="text-uppercase">Assassin's Creed</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus
+            repellat molestiae facilis. Reprehenderit laboriosam beatae dolorem
+            ratione libero, soluta tempore. Facere quam odio nulla doloremque
+            eveniet reiciendis architecto eum.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+            fugiat, quia officia accusamus velit ullam excepturi, quasi soluta
+            illum totam architecto consectetur, iste ratione. Possimus quaerat
+            molestias delectus maiores ipsam.
+          </p>
+        </div>
+        <div style="margin-left: 2rem">
+          <img src="/multimedia/MK11.jpg" width="200rem" />
+        </div>
+      </div>
+    <div class="imagen-background mb-5" style='color:white'>
+      <h3 class="text-uppercase fw-bold">Gaming Expo</h3>
+      <br />
+      <div class="w-50">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          voluptatem cum, possimus expedita repellat voluptates omnis assumenda
+          porro a? Libero tempore saepe impedit quisquam nulla, nam voluptatem
+          praesentium ipsam ipsum.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio
+          alias mollitia exercitationem est architecto adipisci aut, dolorum
+          blanditiis molestias officiis at, sed magnam ratione illum similique
+          eum quibusdam sit!
+        </p>
+        <br />
+        <button type="button" style="background-color: #0969E6; color: white;border-style: none; padding: .2rem 1rem; border-radius: 5px; font-weight: bold;" id="bot">
+          <a id="ancla">Reservar</a>
+        </button>
+      </div>
+    </div>
+    <div id="modal1" class="modalmask">
+      <div
+        class="modalbox movedown"
+        style="background-color: #202124; border-radius: 2rem; color: white;"
+      >
+        <a href="#close" title="Close" class="close">X</a>
+        <form action="" style="padding: 2rem; ">
+          <legend class="fw-bolder text-uppercase text-center mb-5">
+            Unete a nuestra convensión
+          </legend>
+          <label for="">Nombres:</label>
+          <input type="text" style="border-radius: 0.2rem" />
+          <label style="margin-top: 1.8rem" for="">Edad:</label>
+          <input
+            type="text"
+            style="margin-left: 1.7rem; border-radius: 0.2rem"
+          />
+          <label style="margin-top: 1.8rem" for="">Apellidos:</label>
+          <input type="text" style="border-radius: 0.2rem" />
+          <label style="margin-top: 1.8rem" for="">Correo:</label>
+          <input type="text" style="margin-left: 1rem; border-radius: 0.2rem" />
+          <div class="d-flex justify-content-end mt-5">
+            <button type="submit" style="background-color: #0969E6; color: white;border-style: none; padding: .2rem 1rem; border-radius: 5px; font-weight: bold;">Enviar</button>
+          </form>
+          </div>
+         
+      </div>
+    </div>
+
+    <script src="/jquery.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#ancla").addClass("boton-estilo");
+        $("#bot").click(function () {
+          const modal = "#modal1";
+
+          $("#ancla").attr("href", modal);
+        });
+        $("#twitch").click(function () {
+            
+          window.location.href = "https://www.twitch.tv";
+          
+        }); 
+        $("#discord").click(function () {
+          
+          window.location.href = "https://www.discord.com";
+          
+        }); 
+        $("#playstation").click(function () {
+          
+          window.location.href = "https://www.playstation.com";
+          
+        }); 
+      });
+    </script>
   </body>
 </html>

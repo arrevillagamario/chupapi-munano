@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Xbox</title>
+    <title>Nintendo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/styles/xbox.css" />
+    <link rel="stylesheet" href="/styles/nintendo.css" />
   </head>
-  <body style="background-color: #202124; color: white">
+  <body>
     <nav
       class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
       data-bs-theme="dark"
@@ -47,7 +47,7 @@
             <li class="nav-item">
               <a class="nav-link active" href="Nintendo.html">Nintendo</a>
             </li>
-            
+           
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -65,7 +65,7 @@
     </nav>
 
     <div>
-      <h1 class="text-uppercase mt-5 mb-5 fw-bolder" style="padding-left: 2rem">
+      <h1 class="text-uppercase mt-5 mb-5 fw-bolder" style="padding-left: 2rem; color: red;">
         Nuestros juegos
       </h1>
     </div>
@@ -80,35 +80,35 @@
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
               <img
-                src="/multimedia/Halo-5.jpg"
+                src="/multimedia/mariomaker.jpg"
                 class="d-block w-100 h-75"
                 alt="Imagen de Xbox"
               />
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
-                src="/multimedia/cod.png"
+                src="/multimedia/marioO.jpg"
                 class="d-block w-100 h-75"
                 alt="Imagen COD"
               />
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
-                src="/multimedia/gta-v-portada.jpg"
+                src="/multimedia/Smas.jpg"
                 class="d-block w-100 h-75"
                 alt="Imagen de gta"
               />
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
-                src="/multimedia/fortnite.jpg"
+                src="/multimedia/JD.avif"
                 class="d-block w-100 h-75"
                 alt="Imagen de fortnite"
               />
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
-                src="/multimedia/reddead.jpg"
+                src="/multimedia/marioKart.webp"
                 class="d-block w-100 h-75"
                 alt="Imagen de Red dead redemption"
               />
@@ -137,17 +137,18 @@
     </div>
 
     <section class="contenedor">
-      <div id="icons" class="flex-container">
+      <div id="icons" class="flex-container" style="color: white;">
         <div>
           <div
             style="padding: 2rem; background-color: #000; margin: 0 1rem"
             class="icons"
+            id="twitch"
+            
           >
             <img
               src="/multimedia/twitch_icon_146123.png"
               alt="Twitch"
               width="100px"
-              id="twitch"
             />
             <p style="text-align: center">Twitch</p>
           </div>
@@ -170,19 +171,21 @@
           <div
             style="padding: 2rem; background-color: #000; margin: 0 1rem"
             class="icons"
-            id="xbox"
+            id="nintendo"
           >
-            <img src="/multimedia/xbox_23169.png" alt="Discord" width="100px" />
-            <p style="text-align: center">Xbox gaming</p>
+            <img src="/multimedia/MdiNintendoSwitch.svg" alt="Discord" width="100px" />
+            <p style="text-align: center">nintendo</p>
           </div>
         </div>
       </div>
-      <div
+      
+    </section>
+    <div
         class="flex-container"
-        style="margin-bottom: 100px; margin-top: 100px"
+        style="margin-bottom: 100px; margin-top: 100px; background-color:#202124; width: 100%; padding: 2rem 10rem; color: white;"
       >
         <div>
-          <h2 class="text-uppercase">Assassin's Creed</h2>
+          <h2 class="text-uppercase">Mario Kart</h2>
           <br />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus
@@ -199,11 +202,10 @@
           </p>
         </div>
         <div style="margin-left: 2rem">
-          <img src="/multimedia/Assaisans.webp" width="500rem" />
+          <img src="/multimedia/mariodrive.jpg" width="300rem" height="500rem" />
         </div>
       </div>
-    </section>
-    <div class="imagen-background mb-5">
+    <div class="imagen-background mb-5" style="color: white;">
       <h3 class="text-uppercase fw-bold">Gaming Expo</h3>
       <br />
       <div class="w-50">
@@ -221,7 +223,7 @@
           eum quibusdam sit!
         </p>
         <br />
-        <button type="button" class="btn btn-success" id="bot">
+        <button type="button" class="btn btn-danger" id="bot">
           <a id="ancla">Reservar</a>
         </button>
       </div>
@@ -229,7 +231,7 @@
     <div id="modal1" class="modalmask">
       <div
         class="modalbox movedown"
-        style="background-color: #202124; border-radius: 2rem"
+        style="background-color: #202124; border-radius: 2rem; color: white;"
       >
         <a href="#close" title="Close" class="close">X</a>
         <form action="" style="padding: 2rem">
@@ -248,7 +250,7 @@
           <label style="margin-top: 1.8rem" for="">Correo:</label>
           <input type="text" style="margin-left: 1rem; border-radius: 0.2rem" />
           <div class="d-flex justify-content-end mt-5">
-            <button type="submit" class="btn btn-success">Enviar</button>
+            <button type="submit" class="btn btn-danger">Enviar</button>
           </form>
           </div>
          
@@ -270,21 +272,21 @@
 
           $("#ancla").attr("href", modal);
         });
-        $("#twitch").click(function () {
+         $("#twitch").click(function () {
             
-          window.location.href = "https://www.twitch.tv";
-          
-        }); 
-        $("#discord").click(function () {
-          
-          window.location.href = "https://www.discord.com";
-          
-        }); 
-        $("#xbox").click(function () {
-          
-          window.location.href = "https://www.xbox.com";
-          
-        }); 
+            window.location.href = "https://www.twitch.tv";
+            
+          }); 
+          $("#discord").click(function () {
+            
+            window.location.href = "https://www.discord.com";
+            
+          }); 
+          $("#nintendo").click(function () {
+            
+            window.location.href = "https://www.nintendo.com";
+            
+          }); 
       });
     </script>
   </body>
