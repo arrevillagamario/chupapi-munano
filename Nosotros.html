@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sobre nosotros</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/nosotros.css" />
+  </head>
+
+  <body style="background-color: #202124; color: white">
+    <nav
+      class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Xbox.html"
+                >Xbox</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Playstation.html">Playstation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Nintendo.html">Nintendo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/Consolas.html">Consolas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/Nosotros.html"
+                >Sobre nosotros</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="imagen-background"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div>
+        <h2 class="text-uppercase fw-bolder" style="padding-left: 2rem">
+          Sobre nosotros
+        </h2>
+      </div>
+
+      <div class="contenedor" id="nosotros" style="text-align: center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eos
+        aliquid nisi distinctio porro itaque illum error quibusdam corrupti eius
+        inventore fugit quo, odit placeat eveniet veritatis harum. Molestias,
+        saepe!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+        recusandae totam veritatis facere minima delectus soluta hic cum
+        consequuntur odit sequi obcaecati doloremque dolor vitae. Magni quos
+        consequatur aspernatur esse., Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Nihil accusantium quis amet enim voluptatem temporibus
+        mollitia dolorum eligendi consequuntur, dignissimos soluta commodi,
+        laborum doloribus nemo, ullam aperiam sunt expedita maiores.
+      </div>
+    </div>
+
+    <script src="/jquery.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#ancla").addClass("boton-estilo");
+
+        $("#bot").click(function () {
+          const modal = "#modal1";
+          $("#ancla").attr("href", modal);
+        });
+
+        $("#twitch").click(function () {
+          window.location.href = "https://www.twitch.tv";
+        });
+
+        $("#discord").click(function () {
+          window.location.href = "https://www.discord.com";
+        });
+
+        $("#xbox").click(function () {
+          window.location.href = "https://www.xbox.com";
+        });
+
+        $("#nosotros").addClass("intro");
+
+        function isInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+              (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        function isInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+              (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        function animateElements() {
+          const title = $("#title");
+          const paragraph1 = $("#paragraph1");
+          const paragraph2 = $("#paragraph2");
+
+          if (isInViewport(title[0]) && title.hasClass("hidden")) {
+            gsap.to(title, {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: "power2.out",
+            });
+            title.removeClass("hidden");
+          }
+
+          if (isInViewport(paragraph1[0]) && paragraph1.hasClass("hidden")) {
+            gsap.to(paragraph1, {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: "power2.out",
+            });
+            paragraph1.removeClass("hidden");
+          }
+
+          if (isInViewport(paragraph2[0]) && paragraph2.hasClass("hidden")) {
+            gsap.to(paragraph2, {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: "power2.out",
+            });
+            paragraph2.removeClass("hidden");
+          }
+        }
+
+        $(window).scroll(animateElements);
+        animateElements();
+      });
+    </script>
+  </body>
+</html>

@@ -1,291 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Xbox</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/styles/xbox.css" />
-  </head>
-  <body style="background-color: #202124; color: white">
-    <nav
-      class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Xbox</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/styles/xbox.css" />
+</head>
+
+<body style="background-color: #202124; color: white">
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Xbox.html">Xbox</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Playstation.html">Playstation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Nintendo.html">Nintendo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/Consolas.html">Consolas</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/Nosotros.html">Sobre nosotros</a>
+        </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <h1 class="text-uppercase mt-5 mb-5 fw-bolder" style="padding-left: 2rem">
+      Nuestros juegos
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-12 intro">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="/multimedia/Halo-5.jpg" class="d-block w-100 h-75" alt="Imagen de Xbox" />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/multimedia/cod.png" class="d-block w-100 h-75" alt="Imagen COD" />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/multimedia/gta-v-portada.jpg" class="d-block w-100 h-75" alt="Imagen de gta" />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/multimedia/fortnite.jpg" class="d-block w-100 h-75" alt="Imagen de fortnite" />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/multimedia/reddead.jpg" class="d-block w-100 h-75" alt="Imagen de Red dead redemption" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Xbox.html"
-                >Xbox</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Playstation.html">Playstation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="Nintendo.html">Nintendo</a>
-            </li>
-            
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="contenedor">
+    <div id="icons" class="flex-container">
+      <div>
+        <div style="padding: 2rem; background-color: #000; margin: 0 1rem" class="icons">
+          <img src="/multimedia/twitch_icon_146123.png" alt="Twitch" width="100px" id="twitch" />
+          <p style="text-align: center">Twitch</p>
         </div>
       </div>
-    </nav>
-
-    <div>
-      <h1 class="text-uppercase mt-5 mb-5 fw-bolder" style="padding-left: 2rem">
-        Nuestros juegos
-      </h1>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <div
-          id="carouselExampleInterval"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-              <img
-                src="/multimedia/Halo-5.jpg"
-                class="d-block w-100 h-75"
-                alt="Imagen de Xbox"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                src="/multimedia/cod.png"
-                class="d-block w-100 h-75"
-                alt="Imagen COD"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                src="/multimedia/gta-v-portada.jpg"
-                class="d-block w-100 h-75"
-                alt="Imagen de gta"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                src="/multimedia/fortnite.jpg"
-                class="d-block w-100 h-75"
-                alt="Imagen de fortnite"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                src="/multimedia/reddead.jpg"
-                class="d-block w-100 h-75"
-                alt="Imagen de Red dead redemption"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <div>
+        <div style="padding: 2rem; background-color: #000; margin: 0 1rem" class="icons" id="discord">
+          <img src="/multimedia/discord-logo-4-1.png" alt="Discord" width="100px" />
+          <p style="text-align: center">Discord</p>
+        </div>
+      </div>
+      <div>
+        <div style="padding: 2rem; background-color: #000; margin: 0 1rem" class="icons" id="xbox">
+          <img src="/multimedia/xbox_23169.png" alt="Discord" width="100px" />
+          <p style="text-align: center">Xbox gaming</p>
         </div>
       </div>
     </div>
-
-    <section class="contenedor">
-      <div id="icons" class="flex-container">
-        <div>
-          <div
-            style="padding: 2rem; background-color: #000; margin: 0 1rem"
-            class="icons"
-          >
-            <img
-              src="/multimedia/twitch_icon_146123.png"
-              alt="Twitch"
-              width="100px"
-              id="twitch"
-            />
-            <p style="text-align: center">Twitch</p>
-          </div>
-        </div>
-        <div>
-          <div
-            style="padding: 2rem; background-color: #000; margin: 0 1rem"
-            class="icons"
-            id="discord"
-          >
-            <img
-              src="/multimedia/discord-logo-4-1.png"
-              alt="Discord"
-              width="100px"
-            />
-            <p style="text-align: center">Discord</p>
-          </div>
-        </div>
-        <div>
-          <div
-            style="padding: 2rem; background-color: #000; margin: 0 1rem"
-            class="icons"
-            id="xbox"
-          >
-            <img src="/multimedia/xbox_23169.png" alt="Discord" width="100px" />
-            <p style="text-align: center">Xbox gaming</p>
-          </div>
-        </div>
+    <div class="flex-container" style="margin-bottom: 100px; margin-top: 100px">
+      <div class="text-container">
+        <h2 class="text-uppercase " id="title">Assassin's Creed</h2>
+        <br />
+        <p id="paragraph1" class="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus
+          repellat molestiae facilis. Reprehenderit laboriosam beatae dolorem
+          ratione libero, soluta tempore. Facere quam odio nulla doloremque
+          eveniet reiciendis architecto eum.
+        </p>
+        <br />
+        <p id="paragraph2" class="">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+          fugiat, quia officia accusamus velit ullam excepturi, quasi soluta
+          illum totam architecto consectetur, iste ratione. Possimus quaerat
+          molestias delectus maiores ipsam.
+        </p>
       </div>
-      <div
-        class="flex-container"
-        style="margin-bottom: 100px; margin-top: 100px"
-      >
-        <div>
-          <h2 class="text-uppercase">Assassin's Creed</h2>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus
-            repellat molestiae facilis. Reprehenderit laboriosam beatae dolorem
-            ratione libero, soluta tempore. Facere quam odio nulla doloremque
-            eveniet reiciendis architecto eum.
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-            fugiat, quia officia accusamus velit ullam excepturi, quasi soluta
-            illum totam architecto consectetur, iste ratione. Possimus quaerat
-            molestias delectus maiores ipsam.
-          </p>
-        </div>
-        <div style="margin-left: 2rem">
-          <img src="/multimedia/Assaisans.webp" width="500rem" />
-        </div>
+      <div style="margin-left: 2rem">
+        <img src="/multimedia/Assaisans.webp" width="500rem" />
       </div>
-    </section>
-    <div class="imagen-background mb-5">
-      <h3 class="text-uppercase fw-bold">Gaming Expo</h3>
+    </div>
+  </section>
+  <div class="imagen-background mb-5">
+    <h3 class="text-uppercase fw-bold">Gaming Expo</h3>
+    <br />
+    <div class="w-50">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        voluptatem cum, possimus expedita repellat voluptates omnis assumenda
+        porro a? Libero tempore saepe impedit quisquam nulla, nam voluptatem
+        praesentium ipsam ipsum.
+      </p>
       <br />
-      <div class="w-50">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          voluptatem cum, possimus expedita repellat voluptates omnis assumenda
-          porro a? Libero tempore saepe impedit quisquam nulla, nam voluptatem
-          praesentium ipsam ipsum.
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio
-          alias mollitia exercitationem est architecto adipisci aut, dolorum
-          blanditiis molestias officiis at, sed magnam ratione illum similique
-          eum quibusdam sit!
-        </p>
-        <br />
-        <button type="button" class="btn btn-success" id="bot">
-          <a id="ancla">Reservar</a>
-        </button>
-      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio
+        alias mollitia exercitationem est architecto adipisci aut, dolorum
+        blanditiis molestias officiis at, sed magnam ratione illum similique
+        eum quibusdam sit!
+      </p>
+      <br />
+      <button type="button" class="btn btn-success" id="bot">
+        <a id="ancla">Reservar</a>
+      </button>
     </div>
-    <div id="modal1" class="modalmask">
-      <div
-        class="modalbox movedown"
-        style="background-color: #202124; border-radius: 2rem"
-      >
-        <a href="#close" title="Close" class="close">X</a>
-        <form action="" style="padding: 2rem">
-          <legend class="fw-bolder text-uppercase text-center mb-5">
-            Unete a nuestra convensión
-          </legend>
-          <label for="">Nombres:</label>
-          <input type="text" style="border-radius: 0.2rem" />
-          <label style="margin-top: 1.8rem" for="">Edad:</label>
-          <input
-            type="text"
-            style="margin-left: 1.7rem; border-radius: 0.2rem"
-          />
-          <label style="margin-top: 1.8rem" for="">Apellidos:</label>
-          <input type="text" style="border-radius: 0.2rem" />
-          <label style="margin-top: 1.8rem" for="">Correo:</label>
-          <input type="text" style="margin-left: 1rem; border-radius: 0.2rem" />
-          <div class="d-flex justify-content-end mt-5">
-            <button type="submit" class="btn btn-success">Enviar</button>
-          </form>
-          </div>
-         
-      </div>
+  </div>
+  <div id="modal1" class="modalmask">
+    <div class="modalbox movedown" style="background-color: #202124; border-radius: 2rem">
+      <a href="#close" title="Close" class="close">X</a>
+      <form action="" style="padding: 2rem">
+        <legend class="fw-bolder text-uppercase text-center mb-5">
+          Unete a nuestra convensión
+        </legend>
+        <label for="">Nombres:</label>
+        <input type="text" style="border-radius: 0.2rem" />
+        <label style="margin-top: 1.8rem" for="">Edad:</label>
+        <input type="text" style="margin-left: 1.7rem; border-radius: 0.2rem" />
+        <label style="margin-top: 1.8rem" for="">Apellidos:</label>
+        <input type="text" style="border-radius: 0.2rem" />
+        <label style="margin-top: 1.8rem" for="">Correo:</label>
+        <input type="text" style="margin-left: 1rem; border-radius: 0.2rem" />
+        <div class="d-flex justify-content-end mt-5">
+          <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
     </div>
 
-    <script src="/jquery.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+  </div>
+  </div>
 
-    <script>
-      $(document).ready(function () {
-        $("#ancla").addClass("boton-estilo");
-        $("#bot").click(function () {
-          const modal = "#modal1";
+  <script src="/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
 
-          $("#ancla").attr("href", modal);
-        });
-        $("#twitch").click(function () {
-            
-          window.location.href = "https://www.twitch.tv";
-          
-        }); 
-        $("#discord").click(function () {
-          
-          window.location.href = "https://www.discord.com";
-          
-        }); 
-        $("#xbox").click(function () {
-          
-          window.location.href = "https://www.xbox.com";
-          
-        }); 
+
+  <script>
+    $(document).ready(function () {
+      $("#ancla").addClass("boton-estilo");
+  
+      $("#bot").click(function () {
+        const modal = "#modal1";
+        $("#ancla").attr("href", modal);
       });
-    </script>
-  </body>
+  
+      $("#twitch").click(function () {
+        window.location.href = "https://www.twitch.tv";
+      });
+  
+      $("#discord").click(function () {
+        window.location.href = "https://www.discord.com";
+      });
+  
+      $("#xbox").click(function () {
+        window.location.href = "https://www.xbox.com";
+      });
+  
+      /** function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+  
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+  
+      function animateElements() {
+        const title = $("#title");
+        const paragraph1 = $("#paragraph1");
+        const paragraph2 = $("#paragraph2");
+  
+        if (isInViewport(title[0]) && title.hasClass('hidden')) {
+          gsap.to(title, { opacity: 1, y: 0, duration: 1, ease: 'power2.out' });
+          title.removeClass('hidden');
+        }
+  
+        if (isInViewport(paragraph1[0]) && paragraph1.hasClass('hidden')) {
+          gsap.to(paragraph1, { opacity: 1, y: 0, duration: 1, ease: 'power2.out' });
+          paragraph1.removeClass('hidden');
+        }
+  
+        if (isInViewport(paragraph2[0]) && paragraph2.hasClass('hidden')) {
+          gsap.to(paragraph2, { opacity: 1, y: 0, duration: 1, ease: 'power2.out' });
+          paragraph2.removeClass('hidden');
+        }
+      }
+  
+     
+      $(window).scroll(animateElements);
+      animateElements(); **/
+    });
+  </script>
+  
+
+
+</body>
+
 </html>
